@@ -211,7 +211,7 @@ section.navBar {
     margin: 1.5em 0 0 80em;
     background-color: #fff;
     padding: 0.7em 0;
-    color: black;
+    /* color: black; */
     & ul {
       display: flex;
       flex-direction: row;
@@ -223,6 +223,7 @@ section.navBar {
         transition: all;
         transition-property: 1s;
         transition-duration: 1s;
+        /* color: none; */
         & li {
           text-transform: uppercase;
           font-size: 1.2em;
@@ -230,6 +231,7 @@ section.navBar {
           transition: all;
           transition-property: 1s;
           transition-duration: 1s;
+          color: black;
         }
       }
     }
@@ -237,9 +239,12 @@ section.navBar {
   & a:hover {
     background-color: #000000;
     padding: 0.5em;
-    border-radius: 1em;
-    color: white;
+    border-radius: .5em;
   }
+  & a:hover li{
+    color: white!important;
+  }
+
 }
 
 section.thirdSection {
@@ -260,10 +265,11 @@ section.thirdSection {
       position: absolute;
       bottom: 0;
       background-color: #000;
-      z-index: 250;
+      z-index: 450;
       filter: blur(20px);
       opacity: 90%;
       transform: translate(0, 80%);
+      
     }
     .boxTextLeft {
       width: max-content;
@@ -539,7 +545,7 @@ section.fourSection {
     position: absolute;
     bottom: 100;
     background-color: #000;
-    z-index: 250;
+    z-index: 450;
     filter: blur(100px);
     opacity: 90%;
     transform: translate(-10%, -5%);
